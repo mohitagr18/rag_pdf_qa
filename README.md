@@ -1,7 +1,7 @@
 # rag_pdf_qa
 ```mermaid
 graph LR
-    A[User Uploads PDF(s)] --> B[Streamlit Interface];
+    A[User Uploads PDFs] --> B[Streamlit Interface];
     B -- User Enters Question --> C{LangChain Processing};
     C -- Text Splitting --> D[RecursiveCharacterTextSplitter];
     D -- Embeddings --> E[HuggingFace Embeddings <br> (all-MiniLM-L6-v2)];
